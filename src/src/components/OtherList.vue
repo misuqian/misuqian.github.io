@@ -1,11 +1,11 @@
 <template>
     <div class="btnArea columnCenter ">
-        <div class="areaTitle">📱APP作品</div>
+        <div class="areaTitle">😄其他作品</div>
         <diiv class="rowCenter">
             <button class="appCard" v-for="app in apps" v-bind:key="app.title" @click="linkTap(app)">
                 <img class="appImg" :src="app.img" />
                 <div class="column">
-                    <div class="appTitle">《{{ app.title }}》</div>
+                    <div class="appTitle">{{ app.title }}</div>
                     <div class="appMessage">{{ app.message }}</div>
                 </div>
             </button>
@@ -19,9 +19,7 @@ export default {
     data() {
         return {
             apps: [
-                { title: '米汤姐的相馆', message: '极简的拼长图/瀑布图App', img: require('@/assets/img/apps/mitang.png'), url: 'https://apps.apple.com/cn/app/mi-tang-jie-xiang-guan-fa/id1117481189' },
-                { title: '钱都哪去了', message: '能帮你自动算税的简洁记账App', img: require('@/assets/img/apps/jizhang.png'), url: 'https://apps.apple.com/cn/app/qian-dou-na-qu-le/id1241424341' },
-                { title: '方块与爱（Block&Lover） ', message: '蓝牙互动小游戏App', img: require('@/assets/img/apps/fangkuai.png'), url: 'https://apps.apple.com/cn/app/blocks-lover/id1179446556' },
+                { title: '今潮向', message: '微信公众号AI媒体。每日一推，聚合AI精选要闻与全网平台热榜', img: require('@/assets/img/other/xiaojin.jpg'), url: 'https://misuqian.gitbook.io/jin-chao-xiang' },
             ],
         }
     },
@@ -56,7 +54,7 @@ export default {
     padding: 2px 10px;
     font-size: 18px;
     margin: 0 24px 16px 0;
-    min-width: 300px;
+    width: 350px;
 }
 
 .appCard .appTitle {
@@ -65,6 +63,7 @@ export default {
 
 .appCard .appMessage {
     font-size: 14px;
+    text-align: left;
 }
 
 .appCard .appImg {

@@ -4,8 +4,8 @@
     <div class="title">Peng Qian</div>
     <div class="textArea cloumn">
       <div class="detail"><span>南方科技大学</span>13级本科生，<span>曾经立志做独立开发者</span>，如今在某厂搬砖🧱，女朋友叫米汤姐。</div>
-      <div class="message"><b>最喜欢的语言：</b>JavaScript，C++。</div>
-      <div class="message"><b>最擅长的技能：</b><span>iOS</span>，<span>桌面客户端（QT）</span>，Web（Vue，微信小程序)。</div>
+      <div class="message"><b>最喜欢的语言：</b>JavaScript，Swift。</div>
+      <div class="message"><b>最擅长的技能：</b><span>iOS</span>，<span>Web（Vue，H5/微信小程序）</span>桌面客户端（QT）。</div>
       <div class="message"><b>其他业余爱好：</b>UE4，Unity，Sketch，PS，《炉石传说》，《流放之路》，《Dota2》，《暗黑破坏神3》...</div>
     </div>
     <div class="btnArea rowCenter">
@@ -21,6 +21,7 @@
       <div class="message">游戏一直是我的心结，我一定要好好靠它赚大钱😂</div>
     </div>
     <AppList/>
+    <OtherList/>
     <div class="gap" />
     <Donate />
   </div>
@@ -29,11 +30,13 @@
 <script>
 import Donate from '@/components/Donate';
 import AppList from '@/components/AppList';
+import OtherList from '@/components/OtherList';
 
 export default {
   components: {
     Donate,
-    AppList
+    AppList,
+    OtherList
   },
   data() {
     return {
